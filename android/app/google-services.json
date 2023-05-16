@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "431803436375",
+    "project_id": "sports-field-booking",
+    "storage_bucket": "sports-field-booking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431803436375:android:04785ed3426b4751590212",
+        "android_client_info": {
+          "package_name": "Sports_Field_Booking.Application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431803436375-oecdr36qe11u9jeccron69je9ec74qip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcuibvtgTPNQ0rTrAKUWiqyE8hW3jwHEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431803436375-7a41t92ndplug28p5qil622rfpic68t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431803436375:android:e4b9128f92413d2b590212",
+        "android_client_info": {
+          "package_name": "com.example.sports_field_booking_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431803436375-oecdr36qe11u9jeccron69je9ec74qip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcuibvtgTPNQ0rTrAKUWiqyE8hW3jwHEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431803436375-7a41t92ndplug28p5qil622rfpic68t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

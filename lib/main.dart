@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sports_field_booking_application/widgets/Function/navigation.dart';
-import 'Page/page.dart';
+import 'Login/login.dart';
+import 'widgets/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,8 +22,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Login(),
-        '/ForgotPassword': (context) => ForgotPassword(),
-        '/CreateNewAccount': (context) => CreateNewAccount(),
         '/Home': (context) => Navigation(),
       },
     );

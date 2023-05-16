@@ -6,35 +6,37 @@ class Category extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: appbar(),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 10),
-          child: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisExtent: 270,
-            ),
-            itemCount: 6,
-            itemBuilder: ((context, index) {
-              return Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(25),
-                    image: DecorationImage(
-                      image: AssetImage('images/${index + 1}c.jpg'),
-                      fit: BoxFit.cover,
-                    ),
+    return MaterialApp(
+      home: DefaultTabController(
+          length: 3,
+          child: Scaffold(
+            appBar: AppBar(
+              centerTitle: true,
+              automaticallyImplyLeading: false,
+              title: appbar(),
+              bottom: TabBar(
+                indicatorColor: Colors.white,
+                tabs: [
+                  Tab(
+                    text: "Created",
                   ),
-                ),
-              );
-            }),
+                  Tab(
+                    text: "Participated",
+                  ),
+                  Tab(
+                    text: "Finished",
+                  ),
+                ],
+              ),
+            ),
+            body: TabBarView(
+              children: [
+                Created(),
+                Container(),
+                Container(),
+              ]
+            ),
           ),
-        ),
       ),
     );
   }

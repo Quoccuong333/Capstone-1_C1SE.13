@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../color/pallete.dart';
 import '../../Page_home/page_home.dart';
+import '../widgets.dart';
 
 class Navigation extends StatefulWidget {
   const Navigation({super.key});
@@ -10,7 +11,7 @@ class Navigation extends StatefulWidget {
 
 class _NavigationState extends State<Navigation> {
   int index = 0;
-  List screen = [Home(), Category(), Search(), favorite(), Profil()];
+  List screen = [Home(), Category(), Search(), ButtonCreateNewTeam(), Profile()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
