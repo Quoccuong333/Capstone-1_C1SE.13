@@ -9,10 +9,10 @@ class BodyHomeSlide extends StatefulWidget {
 }
 class _BodyHomeSlideState extends State<BodyHomeSlide> {
   final List<String> imageList = [
-    'assets/images/hinh_1.jpg',
-    'assets/images/hinh_2.jpg',
-    'assets/images/hinh_3.jpg',
-    'assets/images/hinh_4.jpg',
+    'assets/san/hinh_1.jpg',
+    'assets/san/hinh_2.jpg',
+    'assets/san/hinh_3.jpg',
+    'assets/san/hinh_5.jpg',
   ];
 
   int _currentPage = 0;
@@ -21,7 +21,7 @@ class _BodyHomeSlideState extends State<BodyHomeSlide> {
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(Duration(seconds: 5), (timer) {
+    _timer = Timer.periodic(Duration(seconds: 3), (timer) {
       _nextImage();
     });
   }

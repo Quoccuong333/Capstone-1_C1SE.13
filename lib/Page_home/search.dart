@@ -20,13 +20,22 @@ class _SearchState extends State<Search> {
               indicatorColor: Colors.white,
               tabs: [
                 Tab(
-                  text: "Sports Fields",
+                  child: Text(
+                    "Sports Fields",
+                    style: TextStyle(fontSize: 17),
+                  ),
                 ),
                 Tab(
-                  text: "Events",
+                  child: Text(
+                    "Events",
+                    style: TextStyle(fontSize: 17),
+                  ),
                 ),
                 Tab(
-                  text: "Team ",
+                  child: Text(
+                    "Team ",
+                    style: TextStyle(fontSize: 17),
+                  ),
                 ),
               ],
             ),

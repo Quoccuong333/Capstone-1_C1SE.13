@@ -15,3 +15,5 @@ export 'Category_Function/created.dart';
 export 'Category_Function/finished.dart';
 export 'Category_Function/participated.dart';
 export 'Category_Function/button_create_own_sports_field.dart';
+
+export 'Details/sports_field_details.dart';

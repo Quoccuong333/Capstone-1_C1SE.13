@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-class BodyHomeBest extends StatelessWidget {
-  const BodyHomeBest ({super.key});
+import '../widgets.dart';
 
-  Widget SingalProducts1(){
+class BodyHomeBest extends StatelessWidget {
+  const BodyHomeBest({Key? key}) : super(key: key);
+
+  Widget SingalProducts1(BuildContext context){
     return Container(
       margin: EdgeInsets.only(left: 5.0, right: 5.0),
       height: 180,
@@ -19,14 +21,20 @@ class BodyHomeBest extends StatelessWidget {
             )
           ]
       ),
-
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            // flex: 2,
-            child: Image.asset(
-              'assets/sport_best/SanCamPha.jpg',
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SportsFieldDetails()),
+                );
+              },
+              child: Image.asset(
+                'assets/sport_best/SanCamPha.jpg',
+              ),
             ),
           ),
           Expanded(
@@ -52,7 +60,6 @@ class BodyHomeBest extends StatelessWidget {
                       fontSize: 11,
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -191,7 +198,7 @@ class BodyHomeBest extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Sân Thể Thao Tốt Nhất",
+                "The Best Sports Court",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -206,13 +213,12 @@ class BodyHomeBest extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              SingalProducts1(),
+              SingalProducts1(context),
               SingalProducts2(),
               SingalProducts3(),
             ],
           ),
         )
-
       ],
     );
   }
