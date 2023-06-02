@@ -189,6 +189,20 @@ class DetailNearCV extends StatelessWidget {
               ),
             ),
           ),
+              Align(
+            alignment: Alignment.bottomLeft,
+            child: BottomNavigationBar(
+              backgroundColor: Colors.white54,
+              elevation: 0,
+              selectedItemColor: Colors.black,
+              items: const [
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.card_giftcard), label: "Voucher"),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.date_range_outlined), label: "Celendar"),
+              ],
+            ),
+          ) 
         ],
       ),
     );
